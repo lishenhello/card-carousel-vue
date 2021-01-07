@@ -30,4 +30,10 @@ Vue.use(cardCarouselVue)
 ## note
 Parent box must have width and height
 
+## demo
+<https://lishenhello.github.io/card-carousel-vue/dist/>
+
+## more
+<https://github.com/lishenhello/card-carousel-vue>
+
 

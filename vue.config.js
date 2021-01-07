@@ -7,6 +7,7 @@ console.log('--------- NODE_ENV -------',NODE_ENV)
 
 module.exports = {
   // 根据不同的执行环境配置不同的入口
+  // publicPath: NODE_ENV === 'production' ? './' : '/',
   lintOnSave: 'warning',
   css: {
     extract: false
@@ -20,7 +21,7 @@ module.exports = {
     }])
   },
   // entry: './src/main.js',
-  outputDir: 'card-carousel-vue',
+  outputDir: 'dist',
 
   devServer: {
     open: true,
