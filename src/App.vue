@@ -1,22 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <card-carousel-vue :carouselData="dataList">
+      <template scope="props">
+        <div>{{ props.item }}</div>
+        <!--<div>{{ props.index }}</div>-->
+      </template>
+    </card-carousel-vue>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
   name: "App",
-  components: {
-    HelloWorld
-  }
+  data() {
+    return {
+      dataList: [1, 2, 3]
+    }
+  },
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,5 +28,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  height: 400px;
 }
 </style>
